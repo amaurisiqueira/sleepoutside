@@ -1,6 +1,10 @@
 {
   "plugins": ["import"],
-  "extends": ["eslint:recommended", "plugin:import/errors", "prettier"],
+  "extends": ["eslint:recommended",
+  "plugin:import/errors",
+  "plugin:import/warnings",
+  "plugin:import/typescript",
+  "prettier"],
   "env": {
     "es6": true,
     "browser": true,
@@ -43,6 +47,7 @@
         "allow": ["resolve", "reject", "done", "next", "err", "error"]
       }
     ],
-    "no-unused-expressions": "off"
+    "no-unused-expressions": "off",
+    "import/namespace": "off"
   }
 }
