@@ -4,26 +4,26 @@ import ProductData from './ProductData.mjs';
 const dataSource = new ProductData('tents');
 
 function addProductToCart(product) {
-  console.log('addProductToCart ');
-  console.log(product);
+  // console.log('addProductToCart ');
+  // console.log(product);
   setLocalStorage('so-cart', product);
 }
 // add to cart button event handler
 async function addToCartHandler(e) {
 
-  console.log('addToCartHandler e.target.dataset.id=');
-  console.log(e.target.dataset.id);
+  // console.log('addToCartHandler e.target.dataset.id=');
+  // console.log(e.target.dataset.id);
   const product = await dataSource.findProductById(e.target.dataset.id);
   
-  console.log('-------------------------------------------------------------');
+  // console.log('-------------------------------------------------------------');
   
-  console.log('product = await dataSource.findProductById(e.target.dataset.id);');
+  // console.log('product = await dataSource.findProductById(e.target.dataset.id);');
   
   
-  console.log(product);
+  // console.log(product);
 
 
-  console.log('-------------------------------------------------------------');
+  // console.log('-------------------------------------------------------------');
   
   addProductToCart(product);
 }

@@ -9,7 +9,7 @@ export function qs(selector, parent = document) {
 export function getLocalStorage(key) {
 
   let value = JSON.parse(localStorage.getItem(key));
-  console.log(`IN FUNCTION getLocalStorage ${key}:`, value);
+  // console.log(`IN FUNCTION getLocalStorage ${key}:`, value);
   
  // return value;
  return Array.isArray(value) ? value : (value !== null ? [value] : []);
@@ -18,7 +18,7 @@ export function getLocalStorage(key) {
 // save data to local storage
 export function setLocalStorage(key, data) {
 
-  console.log(`setLocalStorage ${key}:`, data);
+  // console.log(`setLocalStorage ${key}:`, data);
 
   localStorage.setItem(key, JSON.stringify(data));
 }
