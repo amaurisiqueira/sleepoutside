@@ -3,24 +3,24 @@ import { getLocalStorage } from './utils.mjs';
 function renderCartContents() {
   const cartItems = getLocalStorage('so-cart');
 
-  console.log('--------------------*----------------------');
-  console.log('');
+  // console.log('--------------------*----------------------');
+  // console.log('');
   
-  console.log('cartItems:');
-  console.log(cartItems);
-  console.log('');
-  console.log('--------------------*----------------------');
+  // console.log('cartItems:');
+  // console.log(cartItems);
+  // console.log('');
+  // console.log('--------------------*----------------------');
 
 
 
 
   if (cartItems && Array.isArray(cartItems)) {
-   /* console.log('Contenido de cartItems:');
+   /* // console.log('Contenido de cartItems:');
     cartItems.forEach((item, index) => {
-      console.log(`Item ${index + 1}:`);
+      // console.log(`Item ${index + 1}:`);
       for (const key in item) {
         if (item.hasOwnProperty(key)) {
-          console.log(`ZZZZZZZZ  ${key}: ${item[key]}`);
+          // console.log(`ZZZZZZZZ  ${key}: ${item[key]}`);
         }
       }
     });*/
@@ -33,7 +33,7 @@ function renderCartContents() {
   
 
   } else {
-    console.log('No hay elementos en el carrito o el formato es incorrecto.');
+    // console.log('No hay elementos en el carrito o el formato es incorrecto.');
   }
 /*
   const htmlItems = cartItems.map( 
